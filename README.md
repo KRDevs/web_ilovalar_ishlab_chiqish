@@ -20,7 +20,8 @@ php artisan migrate --seed
 ```
 6. Install node dependencies and generate front-end assets
 ```bash
-npm install && npm run dev
+npm install
+npm run dev
 ```
 7. Start the local development server
 ```bash
