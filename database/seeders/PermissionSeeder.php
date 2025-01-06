@@ -23,8 +23,8 @@ class PermissionSeeder extends Seeder
             'delete-course'
          ];
 
-         foreach ($permissions as $permission) {
+        foreach ($permissions as $permission) {
             Permission::create(['name' => $permission]);
-          }
+        }
     }
 }

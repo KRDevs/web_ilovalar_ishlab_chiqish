@@ -24,11 +24,11 @@
                         <a class="btn btn-success" href="{{ route('users.index') }}">
                             <i class="bi bi-people"></i> Foydalanuvchilarni boshqarish</a>
                     @endcanany
-                    @canany(['create-product', 'edit-product', 'delete-product'])
+                    @canany(['create-course', 'edit-course', 'delete-course'])
                         <a class="btn btn-warning" href="{{ route('products.index') }}">
                             <i class="bi bi-bag"></i> Kurslarni boshqarish</a>
                     @endcanany
-                    @can(['view-product'])
+                    @can(['view-course'])
                         <a class="btn btn-warning" href="{{ route('products.index') }}">
                             <i class="bi bi-bag"></i> Kurslarni ko'rish</a>
                     @endcan

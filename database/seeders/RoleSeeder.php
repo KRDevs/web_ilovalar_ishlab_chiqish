@@ -26,6 +26,7 @@ class RoleSeeder extends Seeder
 
         $productManager->givePermissionTo([
             'create-course',
+            'view-course',
             'edit-course',
             'delete-course'
         ]);

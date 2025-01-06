@@ -4,7 +4,7 @@
 <div class="card">
     <div class="card-header">Kurslar ro'yxati</div>
     <div class="card-body">
-        @can('create-product')
+        @can('create-course')
             <a href="{{ route('products.create') }}" class="btn btn-success btn-sm my-2">
                 <i class="bi bi-plus-circle"></i> Yangi kurs qo'shish
             </a>
@@ -40,13 +40,13 @@
                             <i class="bi bi-eye"></i> Ko'rish
                         </a>
 
-                        @can('edit-product')
+                        @can('edit-course')
                             <a href="{{ route('products.edit', $product->id) }}" class="btn btn-primary btn-sm">
                                 <i class="bi bi-pencil-square"></i> Tahrirlash
                             </a>
                         @endcan
 
-                        @can('delete-product')
+                        @can('delete-course')
                             <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Do you want to delete this product?');">
                                 <i class="bi bi-trash"></i> O'chirish
                             </button>
